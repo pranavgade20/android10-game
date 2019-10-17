@@ -49,6 +49,8 @@ void setupData() {
 
 
 void draw() {
+   //background(100);
+
    drawPanel();
    if (edit_mode) {
       fill(50, 255, 0);
@@ -133,11 +135,6 @@ void drawGrid() {
 
    fill(0);
    for(int i = 0; i < size; i++) for (int j = 0; j < size; j++) {
-      // if (edit_mode) if (data[i][j]) {
-      //    rect(x_off+(w*i), y_off+(h*j), w, h);
-      // } else if (userData[i][j]) {
-      //    rect(x_off+(w*i), y_off+(h*j), w, h);
-      // }
       if(edit_mode && data[i][j]) rect(x_off+(w*i), y_off+(h*j), w, h);
       if(!edit_mode && userData[i][j]) rect(x_off+(w*i), y_off+(h*j), w, h);
    }
