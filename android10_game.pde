@@ -49,8 +49,6 @@ void setupData() {
 
 
 void draw() {
-   //background(100);
-
    drawPanel();
    if (edit_mode) {
       fill(50, 255, 0);
